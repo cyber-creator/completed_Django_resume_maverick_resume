@@ -1,0 +1,762 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Maverick</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="{% static 'css/fonts.css' %}">
+		<link rel="stylesheet" href="{% static 'css/slick.css' %}">
+		<link rel ="stylesheet" href ="{% static 'venobox/venobox.css' %}" type ="text/css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,700i&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+		<header class="header">
+			<div id="hamburger">
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu__box">
+            	<div class="hamburger__open close__icon">
+            		<div></div>
+            	</div>
+            	<div class="menu__inner">
+					<ul class="menu">
+						<li><a href="#About">About</a></li>
+						<li><a href="#Programm">Programm</a></li>
+						<li><a href="#Reviews">Reviews</a></li>
+						<li><a href="#BuyNow">Get Quote</a></li>
+						<li><a href="#Blog">Blog</a></li>
+						<li><a href="#RentBuy">Rent/Buy</a></li>
+						<li><a href="#FAQ">F.A.Q.</a></li>
+						<li><a href="#Contacts">Contacts</a></li>
+					</ul>
+				</div>
+			</div>
+
+            <!-- popUp box -->
+
+            <div class="popup__box">
+            	<div class="popup__open close__popUp">
+            		<div>
+                    </div>
+            	</div>
+                <div class="popup__inner">
+                    <div class="popup_message">
+                        We received you request our employees will contact you as soon as we can!
+                    </div>
+                </div>
+			</div>
+
+            <!-- popUp box end -->
+
+            <nav class="header__top">
+                <a href="#" class="logo"><img src="{% static 'img/logo.png' %}" alt=""></a>
+                <div class="header__top-right">
+	                <a href="tel:375-33-7777777" class="header__phone">+555 555 55 55</a>
+	                <a class="header__btn btn" href="#BuyNow">Book now</a>
+            	</div>
+        	</nav>
+			<div class="header__bottom container__header">
+				<div class="offer">
+					<h1 class="offer__title">Welcome <br/>to the Iceland</h1>
+					<p class="offer__subtitle subtitle">It’s time to make your great escape</p>
+					<a class="offer__btn btn" href="#BuyNow">Start travel now</a>
+				</div>
+				<div class="header__video">
+					<a class = "venobox_custom open_video" data-autoplay = "true" data-vbtype = "video" href = "https://www.youtube.com/embed/F-1weFCiYBA"></a>
+					<span class="header__video-text">Watch video</span>
+				</div>
+			</div>
+		</header>
+		<section id="About" class="about">
+			<div class="about__inner wrapper">
+				<div class="about__items">
+					<div class="about__item">
+						<img class="about__item-img" src="{% static 'img/Shape-1.png' %}" alt="">
+						<h2 class="about__item-title">14 days</h2>
+						<div class="about__item-text">Lorem ipsum text here it is normal for us</div>
+					</div>
+					<div class="about__item">
+						<img class="about__item-img" src="{% static 'img/Shape-2.png' %}" alt="">
+						<h2 class="about__item-title">150+</h2>
+						<div class="about__item-text">Lorem ipsum text here  it is normal for us</div>
+					</div>
+					<div class="about__item">
+						<img class="about__item-img" src="{% static 'img/Shape-3.png' %}" alt="">
+						<h2 class="about__item-title">18</h2>
+						<div class="about__item-text">Lorem ipsum text here  it is normal for us</div>
+					</div>
+					<div class="about__item">
+						<img class="about__item-img" src="{% static 'img/Shape-4.png' %}" alt="">
+						<h2 class="about__item-title">7500 km</h2>
+						<div class="about__item-text">Lorem ipsum text here  it is normal for us</div>
+					</div>
+				</div>
+				<div class="about__chess">
+					<div class="chess__item1">
+						<div class="chess__item1-img">
+							<img src="{% static 'img/about_img_1.jpg' %}" alt="">
+						</div>
+						<div class="chess__item1-text">
+							<div class="chess__number Montserrat">01</div>
+							<h3 class="chess__title">Block with description</h3>
+							<div class="chess__description">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </div>
+						</div>
+					</div>
+					<div class="chess__item2">
+						<div class="chess__item2-text">
+							<div class="chess__number Montserrat">02</div>
+							<h3 class="chess__title">Block with description</h3>
+							<div class="chess__description">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div> 
+						</div>
+						<div class="chess__slider">
+							<div class="chess__slider-item">
+								<img src="{% static 'img/about_slider_img.jpg' %}" alt="">
+							</div>
+							<div class="chess__slider-item">
+								<img src="{% static 'img/about_slider_img2.jpg' %}" alt="">
+							</div>
+							<div class="chess__slider-item">
+								<img src="{% static 'img/about_slider_img3.jpg' %}" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="chess__item3">
+						<div class="chess__video">
+							<figure>
+								<img src="{% static 'img/about_video_img.jpg' %}" alt="">
+								<figcaption>
+									<a class = "venobox_chess__video" data-autoplay = "true" data-vbtype = "video" href = "https://www.youtube.com/embed/F-1weFCiYBA"></a>
+								</figcaption>
+							</figure>
+						</div>
+						<div class="chess__item3-text">
+							<div class="chess__number Montserrat">03</div>
+							<h3 class="chess__title">Block with description</h3>
+							<div class="chess__description">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div> 
+						</div>
+					</div>
+					<div class="chess__item4">
+						<div class="chess__item4-text">
+							<div class="chess__number Montserrat">04</div>
+							<h3 class="chess__title">Block with description</h3>
+							<div class="chess__description">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
+						</div>
+						<div class="chess__item4-img">
+							<img src="{% static 'img/about_img_4.jpg' %}" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="Programm" class="programm">
+			<div class="programm__inner">
+				<div class="slider__programm wrapper">
+					<div class="slider__programm-item">
+						<div class="programm__item-box">
+							<div class="programm__item-box-inner">
+								<div class="programm__item-day subtitle">Day 1</div>
+								<h2 class="programm__item-title">Golden Ring of Iceland</h2>
+								<div class="programm__item-text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has distribution of letters, as opposed to using 'Content here, making it look like readable English. </div>
+								<a href="#BuyNow"><button class="programm__item-btn btn" type="submit">Book now</button></a>
+							</div>
+						</div>
+					</div>
+					<div class="slider__programm-item">
+						<div class="programm__item-box">
+							<div class="programm__item-box-inner">
+								<div class="programm__item-day subtitle">Day 2</div>
+								<h2 class="programm__item-title">Askja Caldera</h2>
+								<div class="programm__item-text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has distribution of letters, as opposed to using 'Content here, making it look like readable English.</div>
+								<button class="programm__item-btn btn" type="submit">Book now</button>
+							</div>
+						</div>
+					</div>
+					<div class="slider__programm-item">
+						<div class="programm__item-box">
+							<div class="programm__item-box-inner">
+								<div class="programm__item-day subtitle">Day 3</div>
+								<h2 class="programm__item-title">Vatnajökull National Park</h2>
+								<div class="programm__item-text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has distribution of letters, as opposed to using 'Content here, making it look like readable English.</div>
+								<button class="programm__item-btn btn" type="submit">Book now</button>
+							</div>
+						</div>
+					</div>
+					<div class="slider__programm-item">
+						<div class="programm__item-box">
+							<div class="programm__item-box-inner">
+								<div class="programm__item-day subtitle">Day 4</div>
+								<h2 class="programm__item-title">The Golden Circle</h2>
+								<div class="programm__item-text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has distribution of letters, as opposed to using 'Content here, making it look like readable English. </div>
+								<button class="programm__item-btn btn" type="submit">Book now</button>
+							</div>
+						</div>
+					</div>
+					<div class="slider__programm-item">
+						<div class="programm__item-box">
+							<div class="programm__item-box-inner">
+								<div class="programm__item-day subtitle">Day 5</div>
+								<h2 class="programm__item-title">The South Shore</h2>
+								<div class="programm__item-text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has distribution of letters, as opposed to using 'Content here, making it look like readable English.</div>
+								<button class="programm__item-btn btn" type="submit">Book now</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="menu__programm">
+					<div class="line__menu">
+						<svg id="lines" xmlns="http://www.w3.org/2000/svg" width="44" height="368" viewBox="0 0 22 368">
+						    <defs>
+							    <style>
+							      .cls-1 {
+							        fill: none;
+							        stroke: #fff;
+							        stroke-width: 2px;
+							        stroke-dasharray: 8 4;
+							        fill-rule: evenodd;
+							      }
+							    </style>
+						    </defs>
+							<path id="_5_" data-name="5 +" class="cls-1" d="M1779,3605v6c0,5.67-9,11.67-9,23s9,28,9,45" transform="translate(-1767 -3312)"/>
+							<path id="_4" data-name="4" class="cls-1" d="M1779,3535v6c0,5.66,9,11.67,9,23s-9,28-9,45" transform="translate(-1767 -3312)"/>
+							<path id="_3" data-name="3" class="cls-1" d="M1779,3465v6c0,5.67-9,11.67-9,23s9,28,9,45" transform="translate(-1767 -3312)"/>
+							<path id="_2" data-name="2" class="cls-1" d="M1778,3391v6c0,5.67,9,11.67,9,23s-9,28-9,45" transform="translate(-1767 -3312)"/>
+							<path id="_1" data-name="1" class="cls-1" d="M1779,3313v6c0,5.67-9,11.67-9,23s9,28,9,45" transform="translate(-1767 -3312)"/>
+						</svg>
+						<div class="points__slider">
+							<div class="points__slider-item">
+								<svg class="point__svg" id="active1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44" height="44" viewBox="0 0 44 44">
+								    <defs>
+									    <style>
+									      .class-1, .class-2, .class-3 {
+									        fill: #fff;
+									      }
+
+									      .class-1, .class-2 {
+									        fill-opacity: 0;
+									        opacity: 0.15;
+									      }
+
+									      .class-1 {
+									        filter: url(#filter1);
+									      }
+
+									      .class-2 {
+									        filter: url(#filter1-2);
+									      }
+
+									      .class-4 {
+									        fill: #36d78d;
+									      }
+									    </style>
+									    <filter id="filter1" x="5" y="5" width="34" height="34" filterUnits="userSpaceOnUse">
+									    	<feImage preserveAspectRatio="none" x="5" y="5" width="34" height="34" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzQiIGhlaWdodD0iMzQiIHZpZXdCb3g9IjAgMCAzNCAzNCI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgZmlsbDogdXJsKCNyYWRpYWwtZ3JhZGllbnQpOwogICAgICB9CiAgICA8L3N0eWxlPgogICAgPHJhZGlhbEdyYWRpZW50IGlkPSJyYWRpYWwtZ3JhZGllbnQiIGN4PSIxNyIgY3k9IjE3IiByPSIxNyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZmYiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIwLjE0MSIgc3RvcC1jb2xvcj0iI2ZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2ZmZiIvPgogICAgPC9yYWRpYWxHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iMzQiIGhlaWdodD0iMzQiLz4KPC9zdmc+Cg=="/>
+									    	<feComposite result="composite" operator="in" in2="SourceGraphic"/>
+									    	<feBlend result="blend" in2="SourceGraphic"/>
+									    </filter>
+									    <filter id="filter1-2" x="0" y="0" width="44" height="44" filterUnits="userSpaceOnUse">
+									    	<feImage preserveAspectRatio="none" x="0" y="0" width="44" height="44" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNDQiIGhlaWdodD0iNDQiIHZpZXdCb3g9IjAgMCA0NCA0NCI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgZmlsbDogdXJsKCNyYWRpYWwtZ3JhZGllbnQpOwogICAgICB9CiAgICA8L3N0eWxlPgogICAgPHJhZGlhbEdyYWRpZW50IGlkPSJyYWRpYWwtZ3JhZGllbnQiIGN4PSIyMiIgY3k9IjIyIiByPSIyMiIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZmYiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIwLjE0MSIgc3RvcC1jb2xvcj0iI2ZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2ZmZiIvPgogICAgPC9yYWRpYWxHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iNDQiIGhlaWdodD0iNDQiLz4KPC9zdmc+Cg=="/>
+									    	<feComposite result="composite" operator="in" in2="SourceGraphic"/>
+									    	<feBlend result="blend" in2="SourceGraphic"/>
+									    </filter>
+								    </defs>
+								    <circle id="grad1_2" data-name="grad 2" class="class-1" cx="22" cy="22" r="17"/>
+								    <circle id="grad1_1" data-name="grad 1" class="class-2" cx="22" cy="22" r="22"/>
+								    <circle id="active-1" data-name="active" class="class-3" cx="22" cy="22" r="9"/>
+								    <circle id="active_copy_1" data-name="active copy 3" class="class-4" cx="22" cy="22" r="5"/>
+								</svg>
+							</div>
+							<div class="points__slider-item">
+								<svg class="point__svg" id="active2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44" height="44" viewBox="0 0 44 44">
+								    <defs>
+									    <style>
+									      .class-1, .class-2, .class-3 {
+									        fill: #fff;
+									      }
+
+									      .class-1, .class-2 {
+									        fill-opacity: 0;
+									        opacity: 0.15;
+									      }
+
+									      .class-1 {
+									        filter: url(#filter2);
+									      }
+
+									      .class-2 {
+									        filter: url(#filter2-2);
+									      }
+
+									      .class-4 {
+									        fill: #36d78d;
+									      }
+									    </style>
+									    <filter id="filter2" x="5" y="5" width="34" height="34" filterUnits="userSpaceOnUse">
+									    	<feImage preserveAspectRatio="none" x="5" y="5" width="34" height="34" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzQiIGhlaWdodD0iMzQiIHZpZXdCb3g9IjAgMCAzNCAzNCI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgZmlsbDogdXJsKCNyYWRpYWwtZ3JhZGllbnQpOwogICAgICB9CiAgICA8L3N0eWxlPgogICAgPHJhZGlhbEdyYWRpZW50IGlkPSJyYWRpYWwtZ3JhZGllbnQiIGN4PSIxNyIgY3k9IjE3IiByPSIxNyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZmYiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIwLjE0MSIgc3RvcC1jb2xvcj0iI2ZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2ZmZiIvPgogICAgPC9yYWRpYWxHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iMzQiIGhlaWdodD0iMzQiLz4KPC9zdmc+Cg=="/>
+									    	<feComposite result="composite" operator="in" in2="SourceGraphic"/>
+									    	<feBlend result="blend" in2="SourceGraphic"/>
+									    </filter>
+									    <filter id="filter2-2" x="0" y="0" width="44" height="44" filterUnits="userSpaceOnUse">
+									    	<feImage preserveAspectRatio="none" x="0" y="0" width="44" height="44" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNDQiIGhlaWdodD0iNDQiIHZpZXdCb3g9IjAgMCA0NCA0NCI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgZmlsbDogdXJsKCNyYWRpYWwtZ3JhZGllbnQpOwogICAgICB9CiAgICA8L3N0eWxlPgogICAgPHJhZGlhbEdyYWRpZW50IGlkPSJyYWRpYWwtZ3JhZGllbnQiIGN4PSIyMiIgY3k9IjIyIiByPSIyMiIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZmYiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIwLjE0MSIgc3RvcC1jb2xvcj0iI2ZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2ZmZiIvPgogICAgPC9yYWRpYWxHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iNDQiIGhlaWdodD0iNDQiLz4KPC9zdmc+Cg=="/>
+									    	<feComposite result="composite" operator="in" in2="SourceGraphic"/>
+									    	<feBlend result="blend" in2="SourceGraphic"/>
+									    </filter>
+								    </defs>
+								    <circle id="grad2_2" data-name="grad 2" class="class-1" cx="22" cy="22" r="17"/>
+								    <circle id="grad2_1" data-name="grad 1" class="class-2" cx="22" cy="22" r="22"/>
+								    <circle id="active-2" data-name="active" class="class-3" cx="22" cy="22" r="9"/>
+								    <circle id="active_copy_2" data-name="active copy 3" class="class-4" cx="22" cy="22" r="5"/>
+								</svg>
+							</div>
+							<div class="points__slider-item">
+								<svg class="point__svg" id="active3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44" height="44" viewBox="0 0 44 44">
+								    <defs>
+									    <style>
+									      .class-1, .class-2, .class-3 {
+									        fill: #fff;
+									      }
+
+									      .class-1, .class-2 {
+									        fill-opacity: 0;
+									        opacity: 0.15;
+									      }
+
+									      .class-1 {
+									        filter: url(#filter3);
+									      }
+
+									      .class-2 {
+									        filter: url(#filter3-2);
+									      }
+
+									      .class-4 {
+									        fill: #36d78d;
+									      }
+									    </style>
+									    <filter id="filter3" x="5" y="5" width="34" height="34" filterUnits="userSpaceOnUse">
+									    	<feImage preserveAspectRatio="none" x="5" y="5" width="34" height="34" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzQiIGhlaWdodD0iMzQiIHZpZXdCb3g9IjAgMCAzNCAzNCI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgZmlsbDogdXJsKCNyYWRpYWwtZ3JhZGllbnQpOwogICAgICB9CiAgICA8L3N0eWxlPgogICAgPHJhZGlhbEdyYWRpZW50IGlkPSJyYWRpYWwtZ3JhZGllbnQiIGN4PSIxNyIgY3k9IjE3IiByPSIxNyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZmYiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIwLjE0MSIgc3RvcC1jb2xvcj0iI2ZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2ZmZiIvPgogICAgPC9yYWRpYWxHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iMzQiIGhlaWdodD0iMzQiLz4KPC9zdmc+Cg=="/>
+									    	<feComposite result="composite" operator="in" in2="SourceGraphic"/>
+									    	<feBlend result="blend" in2="SourceGraphic"/>
+									    </filter>
+									    <filter id="filter3-2" x="0" y="0" width="44" height="44" filterUnits="userSpaceOnUse">
+									    	<feImage preserveAspectRatio="none" x="0" y="0" width="44" height="44" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNDQiIGhlaWdodD0iNDQiIHZpZXdCb3g9IjAgMCA0NCA0NCI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgZmlsbDogdXJsKCNyYWRpYWwtZ3JhZGllbnQpOwogICAgICB9CiAgICA8L3N0eWxlPgogICAgPHJhZGlhbEdyYWRpZW50IGlkPSJyYWRpYWwtZ3JhZGllbnQiIGN4PSIyMiIgY3k9IjIyIiByPSIyMiIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZmYiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIwLjE0MSIgc3RvcC1jb2xvcj0iI2ZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2ZmZiIvPgogICAgPC9yYWRpYWxHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iNDQiIGhlaWdodD0iNDQiLz4KPC9zdmc+Cg=="/>
+									    	<feComposite result="composite" operator="in" in2="SourceGraphic"/>
+									    	<feBlend result="blend" in2="SourceGraphic"/>
+									    </filter>
+								    </defs>
+									<circle id="grad3_2" data-name="grad 2" class="class-1" cx="22" cy="22" r="17"/>
+									<circle id="grad3_1" data-name="grad 1" class="class-2" cx="22" cy="22" r="22"/>
+									<circle id="active-3" data-name="active" class="class-3" cx="22" cy="22" r="9"/>
+									<circle id="active_copy_3" data-name="active copy 3" class="class-4" cx="22" cy="22" r="5"/>
+								</svg>
+							</div>
+							<div class="points__slider-item">
+								<svg class="point__svg" id="active4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44" height="44" viewBox="0 0 44 44">
+								    <defs>
+									    <style>
+									      .class-1, .class-2, .class-3 {
+									        fill: #fff;
+									      }
+
+									      .class-1, .class-2 {
+									        fill-opacity: 0;
+									        opacity: 0.15;
+									      }
+
+									      .class-1 {
+									        filter: url(#filter4);
+									      }
+
+									      .class-2 {
+									        filter: url(#filter4-2);
+									      }
+
+									      .class-4 {
+									        fill: #36d78d;
+									      }
+									    </style>
+									    <filter id="filter4" x="5" y="5" width="34" height="34" filterUnits="userSpaceOnUse">
+									    	<feImage preserveAspectRatio="none" x="5" y="5" width="34" height="34" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzQiIGhlaWdodD0iMzQiIHZpZXdCb3g9IjAgMCAzNCAzNCI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgZmlsbDogdXJsKCNyYWRpYWwtZ3JhZGllbnQpOwogICAgICB9CiAgICA8L3N0eWxlPgogICAgPHJhZGlhbEdyYWRpZW50IGlkPSJyYWRpYWwtZ3JhZGllbnQiIGN4PSIxNyIgY3k9IjE3IiByPSIxNyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZmYiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIwLjE0MSIgc3RvcC1jb2xvcj0iI2ZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2ZmZiIvPgogICAgPC9yYWRpYWxHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iMzQiIGhlaWdodD0iMzQiLz4KPC9zdmc+Cg=="/>
+									    	<feComposite result="composite" operator="in" in2="SourceGraphic"/>
+									    	<feBlend result="blend" in2="SourceGraphic"/>
+									    </filter>
+									    <filter id="filter4-2" x="0" y="0" width="44" height="44" filterUnits="userSpaceOnUse">
+									    	<feImage preserveAspectRatio="none" x="0" y="0" width="44" height="44" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNDQiIGhlaWdodD0iNDQiIHZpZXdCb3g9IjAgMCA0NCA0NCI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgZmlsbDogdXJsKCNyYWRpYWwtZ3JhZGllbnQpOwogICAgICB9CiAgICA8L3N0eWxlPgogICAgPHJhZGlhbEdyYWRpZW50IGlkPSJyYWRpYWwtZ3JhZGllbnQiIGN4PSIyMiIgY3k9IjIyIiByPSIyMiIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZmYiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIwLjE0MSIgc3RvcC1jb2xvcj0iI2ZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2ZmZiIvPgogICAgPC9yYWRpYWxHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iNDQiIGhlaWdodD0iNDQiLz4KPC9zdmc+Cg=="/>
+									    	<feComposite result="composite" operator="in" in2="SourceGraphic"/>
+									    	<feBlend result="blend" in2="SourceGraphic"/>
+									    </filter>
+								    </defs>
+									<circle id="grad4_2" data-name="grad 2" class="class-1" cx="22" cy="22" r="17"/>
+									<circle id="grad4_1" data-name="grad 1" class="class-2" cx="22" cy="22" r="22"/>
+									<circle id="active-4" data-name="active" class="class-3" cx="22" cy="22" r="9"/>
+									<circle id="active_copy_4" data-name="active copy 3" class="class-4" cx="22" cy="22" r="5"/>
+								</svg>
+							</div>
+							<div class="points__slider-item">
+								<svg class="point__svg" id="active5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44" height="44" viewBox="0 0 44 44">
+								    <defs>
+									    <style>
+									      .class-1, .class-2, .class-3 {
+									        fill: #fff;
+									      }
+
+									      .class-1, .class-2 {
+									        fill-opacity: 0;
+									        opacity: 0.15;
+									      }
+
+									      .class-1 {
+									        filter: url(#filter5);
+									      }
+
+									      .class-2 {
+									        filter: url(#filter5-2);
+									      }
+
+									      .class-4 {
+									        fill: #36d78d;
+									      }
+									    </style>
+									    <filter id="filter5" x="5" y="5" width="34" height="34" filterUnits="userSpaceOnUse">
+									    	<feImage preserveAspectRatio="none" x="5" y="5" width="34" height="34" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzQiIGhlaWdodD0iMzQiIHZpZXdCb3g9IjAgMCAzNCAzNCI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgZmlsbDogdXJsKCNyYWRpYWwtZ3JhZGllbnQpOwogICAgICB9CiAgICA8L3N0eWxlPgogICAgPHJhZGlhbEdyYWRpZW50IGlkPSJyYWRpYWwtZ3JhZGllbnQiIGN4PSIxNyIgY3k9IjE3IiByPSIxNyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZmYiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIwLjE0MSIgc3RvcC1jb2xvcj0iI2ZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2ZmZiIvPgogICAgPC9yYWRpYWxHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iMzQiIGhlaWdodD0iMzQiLz4KPC9zdmc+Cg=="/>
+									    	<feComposite result="composite" operator="in" in2="SourceGraphic"/>
+									    	<feBlend result="blend" in2="SourceGraphic"/>
+									    </filter>
+									    <filter id="filter5-2" x="0" y="0" width="44" height="44" filterUnits="userSpaceOnUse">
+									    	<feImage preserveAspectRatio="none" x="0" y="0" width="44" height="44" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNDQiIGhlaWdodD0iNDQiIHZpZXdCb3g9IjAgMCA0NCA0NCI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgZmlsbDogdXJsKCNyYWRpYWwtZ3JhZGllbnQpOwogICAgICB9CiAgICA8L3N0eWxlPgogICAgPHJhZGlhbEdyYWRpZW50IGlkPSJyYWRpYWwtZ3JhZGllbnQiIGN4PSIyMiIgY3k9IjIyIiByPSIyMiIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZmYiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIwLjE0MSIgc3RvcC1jb2xvcj0iI2ZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2ZmZiIvPgogICAgPC9yYWRpYWxHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iNDQiIGhlaWdodD0iNDQiLz4KPC9zdmc+Cg=="/>
+									    	<feComposite result="composite" operator="in" in2="SourceGraphic"/>
+									    	<feBlend result="blend" in2="SourceGraphic"/>
+									    </filter>
+								    </defs>
+								    <circle id="grad5_2" data-name="grad 2" class="class-1" cx="22" cy="22" r="17"/>
+								    <circle id="grad5_1" data-name="grad 1" class="class-2" cx="22" cy="22" r="22"/>
+								    <circle id="active-5" data-name="active" class="class-3" cx="22" cy="22" r="9"/>
+								    <circle id="active_copy_5" data-name="active copy 3" class="class-4" cx="22" cy="22" r="5"/>
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="Reviews" class="reviews">
+			<div class="wrapper reviews__inner">
+				<div class="reviews__slider">
+					<div class="reviews__text">
+						Various versions have evolved over the years, sometimes by accident, 
+						<span class="reviews__text-accent">sometimes on purpose</span> (injected humour and the like).
+					</div>
+					<div class="reviews__author">
+						<a href="#" class="author__photo-box"><img class="author__photo" src="{% static 'img/reviews_photo-1.jpg' %}" alt=""></a>
+						<a href="#" class="reviews__author-name"><h4>Jonh Maverick</h4></a>
+					</div>
+				</div>
+				<div class="reviews__slider">
+					<div class="reviews__text">
+						Various versions have evolved over the years, sometimes by accident, 
+						<span class="reviews__text-accent">sometimes on purpose</span> (injected humour and the like).
+					</div>
+					<div class="reviews__author">
+						<a href="#" class="author__photo-box"><img class="author__photo" src="{% static 'img/reviews_photo-1.jpg' %}" alt=""></a>
+						<a href="#" class="reviews__author-name"><h4>Jonh Maverick</h4></a>
+					</div>
+				</div>
+				<div class="reviews__slider">
+					<div class="reviews__text">
+						Various versions have evolved over the years, sometimes by accident, 
+						<span class="reviews__text-accent">sometimes on purpose</span> (injected humour and the like).
+					</div>
+					<div class="reviews__author">
+						<a href="#" class="author__photo-box"><img class="author__photo" src="{% static 'img/reviews_photo-1.jpg' %}" alt=""></a>
+						<a href="#" class="reviews__author-name"><h4>Jonh Maverick</h4></a>
+					</div>
+				</div>
+				<div class="reviews__slider">
+					<div class="reviews__text">
+						Various versions have evolved over the years, sometimes by accident, 
+						<span class="reviews__text-accent">sometimes on purpose</span> (injected humour and the like).
+					</div>
+					<div class="reviews__author">
+						<a href="#" class="author__photo-box"><img class="author__photo" src="{% static 'img/reviews_photo-1.jpg' %}" alt=""></a>
+						<a href="#" class="reviews__author-name"><h4>Jonh Maverick</h4></a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="BuyNow" class="buy__now">
+			<div class="buy__now-wrapper wrapper">
+				<div class="buy__now-inner">
+					<h2 class="buy__now-title">Are you ready for a trip?</h2>
+					<div class="buy__now-subtitle subtitle">20% off for all who book tour in this month.</div>
+					<form id="contact__form" method="post">
+                        {% csrf_token %}
+						<div class="form__box-inner">
+							<div class="input__box-inner">
+				            	<div class="input__name-box">
+			                        <input name="name" type="text" placeholder="Your name"/>
+			                    </div>
+			                    <div class="input__phone-box">
+			                        <input name="phone" type="text" placeholder="Phone number"/>
+			                    </div>
+		                	</div>
+		                    <button class="buy__now-btn btn" type="submit">Start travel now</button>
+			            </div>
+					</form>
+					<div class="buy__now-info">* We don’t share your personal info with anyone. Check out our <a href="#" class="buy__now-info-link">Privacy Policy</a> for more information.</div>
+				</div>
+			</div>
+		</section>
+		<section id="Blog" class="blog">
+			<div class="our__blog wrapper">
+				<h2 class="blog__title">Our blog</h2>
+				<div class="blog__inner">
+					<div class="blog__post-container">
+						<div class="blog__post">
+							<div class="post__img">
+								<img src="{% static 'img/post_img1.jpg' %}" alt="">
+								<div class="post__social">
+									<div class="post__social-like">
+										<a href="#" class="like__link"><i class="icon-heart-o"></i></a>
+										<div class="like__count">244</div>
+									</div>
+									<div class="post__social-share">
+										<a href="#" class="share__link"><i class="icon-share-alt"></i></a>
+										<div class="share__count">175</div>
+									</div>
+								</div>
+							</div>
+							<div class="blog__post-text">
+								<a href="#" class="post__title">Check our latest news</a>
+								<div class="post__text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+								</div>
+								<button class="blog__btn btn" type="submit">Read more</button>
+							</div>
+						</div>
+						<div class="blog__post">
+							<div class="post__img">
+								<img src="{% static 'img/post_img2.jpg' %}" alt="">
+								<div class="post__social">
+									<div class="post__social-like">
+										<a href="#" class="like__link"><i class="icon-heart-o"></i></a>
+										<div class="like__count">852</div>
+									</div>
+									<div class="post__social-share">
+										<a href="#" class="share__link"><i class="icon-share-alt"></i></a>
+										<div class="share__count">354</div>
+									</div>
+								</div>
+							</div>
+							<div class="blog__post-text">
+								<a href="#" class="post__title">Check our latest news</a>
+								<div class="post__text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+								</div>
+								<button class="blog__btn btn" type="submit">Read more</button>
+							</div>
+						</div>
+					</div>
+					<div class="subscribe__box">
+						<img src="{% static 'img/blog_subscribe_img2.jpg' %}" alt="">
+						<div class="subscribe__data">
+							<div class="subtitle__data-title">Stay tuned<br/>on our trips!</div>
+							<a class="subscribe__btn btn" href="#">Subscribe</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="blog__video-box">
+				<div class="blog__video-box-bg">
+				</div>
+				<div class="blog__video-box-container wrapper">
+					<div class="blog__video-box-inner">
+						<h2 class="blog__video-title">Watch video</h2>
+						<div class="blog__video-subtitle subtitle">60 seconds of amazing mountains, lakes and beaches.</div>
+						<div class="blog__video">
+							<figure>
+								<img src="{% static 'img/blog_video_inner.jpg' %}" alt="">
+								<figcaption>
+									<a class = "blog__video-btn venobox_custom open_video" data-autoplay = "true" data-vbtype = "video" href = "https://www.youtube.com/embed/15JkSZ95wzI"></a>
+								</figcaption>
+							</figure>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="RentBuy" class="rent__buy">
+			<div class="wrapper">
+				<h2 class="rb__title">Staff you need</h2>
+				<div class="rb__inner">
+					<div class="rb__item">
+						<a href="#"><img src="{% static 'img/rent_buy_1.jpg' %}" alt=""></a>
+						<a href="#"><h3 class="rb__item-title">Tour</h3></a>
+						<div class="rb__item-price">$150</div>
+						<button class="rb__item-btn btn" type="submit">Get quote</button>
+					</div>
+					<div class="rb__item">
+						<a href="#"><img src="{% static 'img/rent_buy_2.jpg' %}" alt=""></a>
+						<a href="#"><h3 class="rb__item-title">Tour equipment</h3></a>
+						<div class="rb__item-price">$200</div>
+						<button class="rb__item-btn btn" type="submit">Get quote</button>
+					</div>
+					<div class="rb__item">
+						<a href="#"><img src="{% static 'img/rent_buy_3.jpg' %}" alt=""></a>
+						<a href="#"><h3 class="rb__item-title">Sport equipment</h3></a>
+						<div class="rb__item-price">
+							<div class="price">$100</div> 
+							<div class="price__per-day">per/day</div>
+						</div>
+						<button class="rb__item-btn btn" type="submit">Get quote</button>
+					</div>
+					<div class="rb__item">
+						<a href="#"><img src="{% static 'img/rent_buy_4.jpg' %}" alt=""></a>
+						<a href="#"><h3 class="rb__item-title">Sport Trip</h3></a>
+						<div class="rb__item-price">
+							<div class="price">$400</div>
+							<div class="price__per-day">per/day</div>
+						</div>
+						<button class="rb__item-btn btn" type="submit">Get quote</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="FAQ" class="faq">
+			<div class="faq__wrapper wrapper">
+				<h2 class="faq__title">Frequently Asked Questions</h2>
+				<div class="faq__inner">
+					<div class="faq__item">
+						<h3 class="question">Do I need some special for use theme?</h3>
+						<div class="answer">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
+					</div>
+					<div class="faq__item">
+						<h3 class="question">Do I need some special for use theme?</h3>
+						<div class="answer">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
+					</div>
+					<div class="faq__item">
+						<h3 class="question">Do I need some special for use theme?</h3>
+						<div class="answer">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
+					</div>
+					<div class="faq__item">
+						<h3 class="question">Do I need some special for use theme?</h3>
+						<div class="answer">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
+					</div>
+				</div>
+				<div class="other__question">Still have questions? Write on <a href="#" class="other__question-link">codeofdesignteam@gmail.com</a> for answers.</div>
+			</div>
+		</section>
+		<section id="Contacts" class="contacts">
+		 	<div class="instagram__gallery">
+		 		<a href="#" class="instagram__gallery-item">
+		 			<img src="{% static 'img/insta_img1.jpg' %}" alt="">
+		 		</a>
+		 		<a href="#" class="instagram__gallery-item">
+		 			<img src="{% static 'img/insta_img2.jpg' %}" alt="">
+		 		</a>
+		 		<a href="#" class="instagram__gallery-item">
+		 			<img src="{% static 'img/insta_img3.jpg' %}" alt="">
+		 		</a>
+		 		<a href="#" class="instagram__gallery-item">
+		 			<img src="{% static 'img/insta_img4.jpg' %}" alt="">
+		 		</a>
+		 		<a href="#" class="instagram__gallery-item">
+		 			<img src="{% static 'img/insta_img5.jpg' %}" alt="">
+		 		</a>
+		 		<a href="#" class="instagram__gallery-item">
+		 			<img src="{% static 'img/insta_img6.jpg' %}" alt="">
+		 		</a>
+		 		<a href="#" class="instagram__gallery-item">
+		 			<img src="{% static 'img/insta_img7.jpg' %}" alt="">
+		 		</a>
+		 		<a href="#" class="instagram__gallery-item">
+		 			<img src="{% static 'img/insta_img8.jpg' %}" alt="">
+		 		</a>
+		 		<a href="#" class="instagram__gallery-item">
+		 			<img src="{% static 'img/insta_img9.jpg' %}" alt="">
+		 		</a>
+		 		<a href="#" class="instagram__gallery-item">
+		 			<img src="{% static 'img/insta_img10.jpg' %}" alt="">
+		 		</a>
+		 		<a href="#" class="instagram__gallery-item">
+		 			<img src="{% static 'img/insta_img11.jpg' %}" alt="">
+		 		</a>
+		 		<a href="#" class="instagram__gallery-item">
+		 			<img src="{% static 'img/insta_img12.jpg' %}" alt="">
+		 		</a>
+		 		<a href="#" class="instagram__gallery-item">
+		 			<img src="{% static 'img/insta_img13.jpg' %}" alt="">
+		 		</a>
+		 		<a href="#" class="instagram__gallery-item">
+		 			<img src="{% static 'img/insta_img14.jpg' %}" alt="">
+		 		</a>
+		 		<a href="#" class="instagram__gallery-item">
+		 			<img src="{% static 'img/insta_img15.jpg' %}" alt="">
+		 		</a>
+		 		<a href="#" class="instagram__gallery-item">
+		 			<img src="{% static 'img/insta_img16.jpg' %}" alt="">
+		 		</a>
+		 		<a href="#" class="instagram__gallery-item">
+		 			<img src="{% static 'img/insta_img17.jpg' %}" alt="">
+		 		</a>
+		 		<a href="#" class="instagram__gallery-item">
+		 			<img src="{% static 'img/insta_img18.jpg' %}" alt="">
+		 		</a>
+		 		<a href="#" class="instagram__gallery-item">
+		 			<img src="{% static 'img/insta_img19.jpg' %}" alt="">
+		 		</a>
+		 		<a href="#" class="instagram__gallery-item">
+		 			<img src="{% static 'img/insta_img20.jpg' %}" alt="">
+		 		</a>
+		 		<div class="instagram__btn-box"><a class="instagram__btn btn" href="#">Follow us on Instagram</a></div>
+		 	</div>
+		 	<div class="contact__us">
+		 		<div class="contact__wrapper wrapper">
+			 		<div class="contact__us-text">
+			 			<h2 class="contact__us-text-title">Contact us</h2>
+			 			<div class="contact__us-text-description">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. It is a long established fact that a reader will be distracted. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. It is a long established fact that a reader will be distracted. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </div>
+			 		</div>
+			 		<div class="contact__us-info">
+			 			<div class="address__box">
+			 				<img class="address__box-img" src="{% static 'img/contact_1.png' %}" alt="">
+			 				<div class="address">Iceland<br/>Reykjavík</div>
+			 			</div>
+			 			<div class="contact__data-box">
+			 				<img class="contact__data-img" src="{% static 'img/contact_2.png' %}" alt="">
+			 				<div class="contact__data">
+			 					<a class="phone" href="tel:3541234567">+555 555 55 55</a>
+			 					<a class="email" href="#">codeofdesignteam@gmail.com</a>
+			 				</div>
+			 			</div>
+			 		</div>
+			 	</div>
+		 	</div>
+		</section>
+
+		<footer class="footer">
+			<div class="footer__inner wrapper">
+				<a href="#" class="logo__footer"><img src="{% static 'img/logo.png' %}" alt=""></a>
+				<div class="social_footer">
+					<a href="#" class="social_footer-item"><i class="icon-facebook-f"></i></a>
+					<a href="#" class="social_footer-item"><i class="icon-twitter"></i></a>
+					<a href="#" class="social_footer-item"><i class="icon-instagram"></i></a>
+					<a href="#" class="social_footer-item"><i class="icon-youtube-play"></i></a>
+				</div>
+				<div class="copy__text">
+		        	2020 All Rights Reserved. 
+		        </div>
+			</div>
+		</footer>
+		{% block javascript %}
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="{% static 'js/slick.min.js' %}"></script>
+		<script src ="{% static 'venobox/venobox.min.js' %}"> </script>
+		<script src="{% static 'js/main.js' %}"></script>
+        <script>
+        </script>
+		{% endblock javascript %}
+	</body>	
+</html>
